@@ -1,0 +1,142 @@
+
+.inner-text{
+    justify-content: center;
+    margin-bottom: 200px;
+
+
+}
+.bio{
+    margin-top: 100px;
+}
+.title{
+    font-size: 32px;
+}
+.judul{
+    color: #50d8af;
+    position: relative;
+    padding-top: 100px;
+}
+.background {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('img/automation.png');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+}
+.btn-start{
+    text-decoration: none;
+    background-color: #50d8af;
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'arial';
+    margin: 30px;
+    border-color: transparent;
+}
+.overlay{
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the opacity by modifying the last value (0.5 in this example) */
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+
+}
+
+.client-wrapper{
+    margin-top: 0px;
+}
+
+.client-button{
+    border: 1px solid #50d8af;
+    background-color: white;
+    color: #50d8af;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.client-active{
+    border: none;
+    background-color: #50d8af;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+
+.btn-about-us{
+    background-color: #50d8af;
+    padding: 10px 30px;
+    color: white;
+    margin: 20px;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+.title-text{
+    color: #0c2e8a;
+    padding-bottom: 15px;
+}
+.title-border{
+    width: fit-content;
+    margin-bottom: 20px;
+}
+.line-box{
+    width: 40%;
+    height: 5px;
+    background-color: #50d8af;
+
+}
+.img-about-us{
+    height: auto;
+    width: 100%;
+}
+.icon{
+    color: #50d8af;
+}
+.contact-row{
+    margin-bottom: 50px;
+}
+.service-card{
+    border: none;
+}
+
+.contact-box{
+    color: #50d8af;
+    border: none;
+}
+
+.contact-title{
+    font-size: 30px;
+    color: #0c2e8a;
+    
+}
+
+.line{
+    width: 40%;
+    height: 2px;
+    background-color: #0c2e8a;
+    margin: auto;
+}
+
+.client-category{
+    color: #0c2e8a;
+}
+
+.border-none{
+    border: none;
+}
+
+.padding-large{
+    padding: 30px !important;
+}
+
+
+
+.img-wrapper{
+    padding: 100px;
+}
+

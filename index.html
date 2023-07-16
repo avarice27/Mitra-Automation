@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mitra Automation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid"><img src="img/Logo/logo pt ma.jpg" class="img-fluid" height="100" width="100">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link " href="#" role="button"> Services </a>
+                        <ul class="dropdown-menu">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link">Contact</a></li>
+                <li class="nav-item"><a class="nav-link">Login</a></li>
+                </ul>
+                <form class="d-flex" role="search"><input class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search"><button class="btn btn-outline-success" type="submit">Search</button></form>
+            </div>
+        </div>
+    </nav>
+    <div class="background">
+        <div class="overlay">
+            <div class="inner-text">
+                <div class="title judul fw-bold"><h1>PT MITRA AUTOMATION</h1></div>
+                <div class="title judul2 fw-bold" style="color: #132AF6;">Trainer & System Integrator</div>
+            </div>
+            <a href="#" class="btn-start btn btn-success">Get started</a>
+        </div>
+    </div>
+    <div class="bio container-fluid">
+        <div class="row">
+            
+            <div class="col-lg-6 col-sm-12 p-5">
+                <div class="section-title">
+                    <div class="title-border">
+                        <h1 class="title-text">ABOUT US</h1>
+                        <div class="line-box"></div>
+                    </div>
+                </div>
+                <img src="img/about_us.jpg" class="img-about-us" alt="...">
+            </div>
+            <div class="col-lg-6 col-sm-12 p-5 my-auto">
+                <!-- <h2>About Us</h2> -->
+                <p>
+                    PT. Mitra Automation, founded in 2009, in response to the needs of learning and integration of automation systems in Indonesia.
+                    As already known together, the era of globalization has forced industries worldwide to improve production efficiency, improve production quality, 
+                    and reduce environmental pollution in order to compete in global markets and to meet international standards. 
+                    Era of globalization has also brought a major challenge for the industries in Indonesia to improve product quality so as to compete with imported products, 
+                    as well as to international quality standards to qualify. Industrial automation can provide assurance to the industry in improving efficiency, 
+                    maintain quality production, and can reduce levels of environmental pollution.With experts who are experienced, both in providing training on automation systems 
+                    and in the implementation & integration of automation systems, we try our best to help solve problems faced by customers
+                </p>
+                
+                <div class="button-box d-flex justify-content-center">
+                    <button type="button" class="btn-about-us">Selengkapnya</button>
+                    <button type="button" class="btn-about-us">Hubungi Kami</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 p-5">
+                <div class="section-title">
+                    <div class="title-border">
+                        <h1 class="title-text">SERVICES</h1>
+                        <div class="line-box"></div>
+                    </div>
+                </div>
+                <P>Scope of Activities</P>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-6 col-sm-12 p-5 ">
+                <div class="card service-card shadow">
+                <div class="card-body">
+                    <div class="icon"><i class="fa fa-picture-o fa-5x mb-2"></i></div>
+                    <h4 class="title"><p class="text-dark">System Integrator</p></h4>
+                    <p class="description">We are ready to implement automation systems in Indonesia<br><br></p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 p-5 ">
+                <div class="card service-card shadow">
+                <div class="card-body">
+                    <div class="icon"><i class="fa fa-bar-chart fa-5x mb-2"></i></div>
+                    <h4 class="title"><p class="text-dark">Trainer</p></h4>
+                    <p class="description">We are ready to provide training related to the automation system such as: Motor Management, Power Monitoring, PLC, HMI, and SCADA</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 p-5">
+                <div class="section-title">
+                    <div class="title-border">
+                        <h1 class="title-text">CLIENTS</h1>
+                        <div class="line-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row client-wrapper">
+            <div class="client-buttonbox col-12 d-flex justify-content-start flex-wrap p-5">
+                <button class="client-button m-1" id="water-system" onclick="enableClientSection('water-system');">Water System</button>
+                <button class="client-button m-1" id="transportation" onclick="enableClientSection('transportation');">Transportation</button>
+                <button class="client-button m-1" id="automotive" onclick="enableClientSection('automotive');">Automotive</button>
+                <button class="client-button m-1" id="aerospace" onclick="enableClientSection('aerospace');">Aerospace</button>
+                <button class="client-button m-1" id="mining_cement" onclick="enableClientSection('mining_cement');">Mining & Cement</button>
+                <button class="client-button m-1" id="food" onclick="enableClientSection('food');">Food</button>
+                <button class="client-button m-1" id="education" onclick="enableClientSection('education');">Education</button>
+                <button class="client-button m-1" id="oil_gas" onclick="enableClientSection('oil_gas');">Oil & Gas</button>
+            </div>  
+            <div class="client-logo-wrapper p-5" id="water-system">
+                <div class="card shadow border-none">
+                    <div class="card-body row d-flex align-items-center">
+                        <div class="title client-category">Water System</div>
+                        <div class="img-box col-lg-1 col-md-4 p-4" id="bcu" onmouseover="displayDetails('bcu')">
+                            <img class="img-fluid" src="img/Client Logo/Pumping System/BCU.png" id="img" alt="">
+                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                        </div>
+                        <div class="img-box col-lg-1 col-md-4 p-4" id="ejp" onmouseover="displayDetails('ejp')">
+                            <img class="img-fluid" src="img/Client Logo/Pumping System/ejp.png" id="img" alt="" >
+                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                        </div>
+                        <div class="img-box col-lg-1 col-md-4 p-4" id="pdam" onmouseover="displayDetails('pdam')">
+                            <img class="img-fluid" src="img/Client Logo/Pumping System/PDAM Pontianak.png" id="img" alt="">
+                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                        </div>
+                        <div class="img-box col-lg-1 col-md-4 p-4" id="ppa" onmouseover="displayDetails('ppa')">
+                            <img class="img-fluid" src="img/Client Logo/Pumping System/penta power indonesia.webp" id="img" alt="">
+                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                        </div>
+                        <div class="img-box col-lg-1 col-md-4 p-4" id="sds" onmouseover="displayDetails('sds')">
+                            <img class="img-fluid" src="img/Client Logo/Pumping System/sari dumai sejati.jpg" id="img" alt="">
+                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                        </div>
+                        <div class="img-box col-lg-1 col-md-4 p-4" id="ttar" onmouseover="displayDetails('ttar')">
+                            <img class="img-fluid" src="img/Client Logo/Pumping System/tunggal teknik alam raya.jpg" id="img" alt="">
+                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="client-logo-wrapper p-5" id="transportation">
+                <div class="card shadow border-none">
+                    <div class="card-body row d-flex align-items-center">
+                        <div class="title client-category">Transportation</div>
+                        <div class="img-box col-lg-2 col-md-6 p-5" id="ap" onmouseover="displayDetails('ap')">
+                            <img class="img-fluid" src="img/Client Logo/Transportation/angkasa_pura.png" id="img" alt="">
+                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                        
+                        </div>
+                        <div class="img-box col-lg-1 col-md-4 p-4" id="apii" onmouseover="displayDetails('apii')">
+                            <img class="img-fluid" src="img/Client Logo/Transportation/angkasa_pura_2.png" id="img" alt="">
+                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                        
+                        </div>
+                        <div class="img-box col-lg-1 col-md-4 p-4" id="pii" onmouseover="displayDetails('pii')">
+                            <img class="img-fluid" src="img/Client Logo/Transportation/pt_pelindo_ii.png" id="img" alt="">
+                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="client-logo-wrapper p-5" id="automotive">
+                <div class="card shadow border-none">
+                    <div class="card-body row d-flex align-items-center">
+                        <div class="title client-category">Automotive</div>
+                        <div class="img-box col-lg-1 col-md-4 p-4">
+                            <img class="img-fluid" src="img/Client Logo/Automotive/akebono.png" alt="">
+                        </div>
+                        <div class="img-box col-lg-1 col-md-4 p-4">
+                            <img class="img-fluid" src="img/Client Logo/Automotive/astra.png" alt="">
+                        </div>
+                        <div class="img-box col-lg-1 col-md-6 p-5">
+                            <img class="img-fluid" src="img/Client Logo/Automotive/logo igp.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="client-logo-wrapper p-5" id="aerospace">
+            <div class="card shadow border-none">
+                <div class="card-body row d-flex align-items-center">
+                    <div class="title client-category">Aerospace</div>
+                    <div class="img-box col-lg-1 col-md-4 p-4">
+                        <img class="img-fluid" src="img/Client Logo/Aerospace/collins.jpg" alt="">
+                    </div>
+                    <div class="img-box col-lg-1 col-md-4 p-4">
+                        <img class="img-fluid" src="img/Client Logo/Aerospace/pindad.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="client-logo-wrapper p-5" id="mining_cement">
+        <div class="card shadow border-none">
+            <div class="card-body row d-flex align-items-center">
+                <div class="title client-category">Mining & Cement</div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/antam.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/bukit asam.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/Clariant_Logo.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/holcim.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/indocement.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/kbk.jpeg" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/sinar tambang arthalestari.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="client-logo-wrapper p-5" id="food">
+        <div class="card shadow border-none">
+            <div class="card-body row d-flex align-items-center">
+                <div class="title client-category">Food</div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Pharmaceutical/freyabadi indotama.jpeg" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Pharmaceutical/sanbe farma.jpg" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Pharmaceutical/sydna farma.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="client-logo-wrapper p-5" id="education">
+        <div class="card shadow border-none">
+            <div class="card-body row d-flex align-items-center">
+                <div class="title client-category">Education</div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/ATKP Medan.jpg" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/atma jaya.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/bbplk serang.jpg" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/ITENAS.jpg" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/p4tk bandung.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/p4tk medan.jpeg" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/pnj.jpg" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/poliban.jpeg" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/polines.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/politeknik aceh.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/politeknik caltex riau.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/politeknik sriwijaya.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/politeknik ujung pandang.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/polnes.jpeg" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/poltek lpp yogyakarta.jpeg" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/sanata dharma.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/SMKN 1 Cimahi.png" alt="">
+                </div>
+                <div class="img-box col-lg-1 col-md-4 p-4">
+                    <img class="img-fluid" src="img/Client Logo/Education/UGM.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="client-logo-wrapper p-5" id="oil_gas">
+    <div class="card shadow border-none">
+        <div class="card-body row d-flex align-items-center">
+            <div class="title client-category">Oil & Gas</div>
+            <div class="img-box col-lg-1 col-md-4 p-4">
+                <img class="img-fluid" src="img/Client Logo/Energy/Chevron.png" alt="">
+            </div>
+            <div class="img-box col-lg-1 col-md-4 p-4">
+                <img class="img-fluid" src="img/Client Logo/Energy/EMP-Bentu-Ltd.jpg" alt="">
+            </div>
+            <div class="img-box col-lg-1 col-md-4 p-4">
+                <img class="img-fluid" src="img/Client Logo/Energy/pertamina_ep.png" alt="">
+            </div>
+            <div class="img-box col-lg-1 col-md-4 p-4">
+                <img class="img-fluid" src="img/Client Logo/Energy/petroflexx.jpg" alt="">
+            </div>
+            <div class="img-box col-lg-1 col-md-4 p-4">
+                <img class="img-fluid" src="img/Client Logo/Energy/petrokimia gresik.png" alt="">
+            </div>
+            <div class="img-box col-lg-1 col-md-4 p-4">
+                <img class="img-fluid" src="img/Client Logo/Energy/PremierOil.jpg" alt="">
+            </div>
+            <div class="img-box col-lg-1 col-md-4 p-4">
+                <img class="img-fluid" src="img/Client Logo/Energy/pupuk kaltim.png" alt="">
+            </div>
+            <div class="img-box col-lg-1 col-md-4 p-4">
+                <img class="img-fluid" src="img/Client Logo/Energy/pupuk sriwijaya.png" alt="">
+            </div>
+            <div class="img-box col-lg-1 col-md-4 p-4">
+                <img class="img-fluid" src="img/Client Logo/Energy/s2p.jpeg" alt="">
+            </div>
+            <div class="img-box col-lg-1 col-md-4 p-4">
+                <img class="img-fluid" src="img/Client Logo/Energy/total.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="">
+    <div class="client-detail-wrapper p-5" id="client-details" style="display: none;">
+        <div class="card shadow border-none">
+            <div class="card-body row d-flex align-items-center">
+                <div class="col-lg-6 col-sm-12" id="desc-display">
+                    Desc
+                </div>
+                <div class="col-lg-6 col-sm-12 img-wrapper" id="img-display-wrapper">
+                    <img src="img/Client Logo/Energy/Chevron.png" alt="i" class="img-fluid" id="img-display">
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 p-5">
+                <div class="section-title">
+                    <div class="title-border">
+                        <h1 class="title-text">CONTACT US</h1>
+                        <div class="line-box"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row contact-row">
+            <div class="col-lg-4 col-sm-12 p-5">
+                <div class="card contact-box">
+                    <div class="title-box text-center">
+                        <div class="contact-title text-center"> <i class="fa fa-map-marker text-danger"></i> Address </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center text-dark">
+                            Setra Duta Cemara III Blok K-8 No. 12 A, Bandung
+                            Ruko Setrasari Mega Square, Jl. Setrawangi No. B-16, Bandung
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 p-5">
+                <div class="card contact-box">
+                    <div class="title-box">
+                        <div class="contact-title text-center"> <i class="fa fa-phone text-primary"></i> Phone </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="card-body">
+                       <div class="text-center text-dark">
+                        Fax. (022) 200 6927 <br>
+                        Telp. (022) 2027 9212 / 0812 238 4086
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 p-5">
+                <div class="card contact-box">
+                    <div class="title-box">
+                        <div class="contact-title text-center"> <div class="fa fa-envelope-o text-danger"></div> E-Mail </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center text-dark">
+                            info@mitra-automation.id
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center p-5">
+            <iframe class="col-lg-4 col-md-12 gmaps-box" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.074617099458!2d107.58189691373605!3d-6.881664669246827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e747f82cca87%3A0x9a8b639e8c323daa!2sPT.+Mitra+Automation!5e0!3m2!1sen!2sid!4v1560427931413!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        window.onload = enableClientSection("water-system");
+        function enableClientSection(exception){
+            var allClient = document.getElementsByClassName("client-logo-wrapper");
+            for (let i = 0; i < allClient.length; i++) {
+                const element = allClient[i];
+
+                console.log(element.getAttribute("id"));
+                allClient[i].style.display =  element.getAttribute("id") != exception ? 'none': 'block';
+            }
+
+            var allClientButton = document.getElementsByClassName("client-button");
+            for (let j = 0; j < allClientButton.length; j++) {
+                const element = allClientButton[j];
+                element.getAttribute("id") == exception ? element.classList.toggle("client-active") : element.classList.remove("client-active")
+                
+                
+            }
+        }
+
+        function displayDetails(brandName){
+            console.log(brandName);
+            var clientName = document.getElementById(brandName);
+            var img = clientName.querySelector("#img").getAttribute("src");
+            var desc = clientName.querySelector("#desc").value;
+            document.getElementById("desc-display").textContent = desc;
+            var newImg = document.getElementById("img-display");
+            newImg.src = img;
+            var cleintDetails = document.getElementById("client-details")
+            cleintDetails.style.display = 'block';
+            console.log(img);
+        }
+
+    </script>
+</body>
+
+</html>
+        
+        
+        
+    
