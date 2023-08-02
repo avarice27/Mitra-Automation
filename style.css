@@ -101,7 +101,12 @@
     margin-bottom: 50px;
 }
 .service-card{
-    border: none;
+    border-color: wheat;
+    
+}
+.card{
+    border-color: wheat;
+    
 }
 
 .contact-box{

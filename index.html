@@ -16,23 +16,19 @@
         <div class="container-fluid"><img src="img/Logo/logo pt ma.jpg" class="img-fluid" height="100" width="100">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item dropdown"><a class="nav-link " href="#" role="button"> Services </a>
-                        <ul class="dropdown-menu">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                    <li class="home"><a class="nav-link" aria-current="page" href="#body" onclick="scroll">Home</a></li>
+                    <li class="about"><a class="nav-link" href="#about" onclick="scroll">About Us</a></li>
+                    <li class="services"><a class="nav-link " href="#services" onclick="scroll"> Services </a>
                 </li>
-                <li class="nav-item"><a class="nav-link">Contact</a></li>
-                <li class="nav-item"><a class="nav-link">Login</a></li>
+                <li class="clients"><a class="nav-link" onclick="scroll" href="#clients">Clients</a></li>
+                <li class="contact"><a class="nav-link" onclick="scroll" href="#contact">Contact</a></li>
                 </ul>
                 <form class="d-flex" role="search"><input class="form-control me-2" type="search" placeholder="Search"
                         aria-label="Search"><button class="btn btn-outline-success" type="submit">Search</button></form>
             </div>
         </div>
     </nav>
-    <div class="background">
+    <div class="background" id="body">
         <div class="overlay">
             <div class="inner-text">
                 <div class="title judul fw-bold"><h1>PT MITRA AUTOMATION</h1></div>
@@ -42,7 +38,7 @@
         </div>
     </div>
     <div class="bio container-fluid">
-        <div class="row">
+        <div class="row" id="about">
             
             <div class="col-lg-6 col-sm-12 p-5">
                 <div class="section-title">
@@ -71,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="services">
             <div class="col-lg-6 col-sm-12 p-5">
                 <div class="section-title">
                     <div class="title-border">
@@ -105,7 +101,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="clients">
             <div class="col-lg-6 col-sm-12 p-5">
                 <div class="section-title">
                     <div class="title-border">
@@ -128,238 +124,343 @@
                 <button class="client-button m-1" id="oil_gas" onclick="enableClientSection('oil_gas');">Oil & Gas</button>
             </div>  
             <div class="client-logo-wrapper p-5" id="water-system">
-                <div class="card shadow border-none">
+                <div class="card shadow ">
                     <div class="card-body row d-flex align-items-center">
                         <div class="title client-category">Water System</div>
                         <div class="img-box col-lg-1 col-md-4 p-4" id="bcu" onmouseover="displayDetails('bcu')">
                             <img class="img-fluid" src="img/Client Logo/Pumping System/BCU.png" id="img" alt="">
-                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                            <input type="hidden" id="desc" value="In 1984 PT Bumi Cahaya Unggul decided to focus on the field of industrial pumps with a specialization in engineering design and installation.
+                            Ten years later, BCU expanded its marketed product range to include pumping package system fabrication and process compressor services, so that its specialization includes the entire fluid machine consisting of equipment for moving liquids (pumps) and equipment for compressing gases (compressors).">
                         </div>
                         <div class="img-box col-lg-1 col-md-4 p-4" id="ejp" onmouseover="displayDetails('ejp')">
                             <img class="img-fluid" src="img/Client Logo/Pumping System/ejp.png" id="img" alt="" >
-                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                            <input type="hidden" id="desc" value="PT. Epsindo Jaya Pratama (EJP) is a well established Indonesia company experience in producing Oil Well Submersible Pumps. EJP is also an expert in providing service repair and maintenance for Oil Submersible Pump">
                         </div>
                         <div class="img-box col-lg-1 col-md-4 p-4" id="pdam" onmouseover="displayDetails('pdam')">
                             <img class="img-fluid" src="img/Client Logo/Pumping System/PDAM Pontianak.png" id="img" alt="">
-                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                            <input type="hidden" id="desc" value="PDAM Pontianak is likely a regional water supply company located in Pontianak, West Kalimantan, Indonesia. It is responsible for providing clean and safe drinking water to residents and businesses in the region.">
                         </div>
                         <div class="img-box col-lg-1 col-md-4 p-4" id="ppa" onmouseover="displayDetails('ppa')">
                             <img class="img-fluid" src="img/Client Logo/Pumping System/penta power indonesia.webp" id="img" alt="">
-                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                            <input type="hidden" id="desc" value="PT. Penta Power Indonesia is a professional Heat Pump company with committed sales & marketing and service. Our core philosophy is to provide the best service to meet customer satisfaction and create added value to our business partners.
+                            PT. Penta Power Indonesia was established in 2010 with the effort and dedication of all the best employees and we are committed to providing good quality Heat Pumps at reasonable prices.">
                         </div>
                         <div class="img-box col-lg-1 col-md-4 p-4" id="sds" onmouseover="displayDetails('sds')">
                             <img class="img-fluid" src="img/Client Logo/Pumping System/sari dumai sejati.jpg" id="img" alt="">
-                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                            <input type="hidden" id="desc" value="Apical is a leading vegetable oil processor with an expanding global footprint.To date, with integrated assets in strategic locations spanning Indonesia, China and Spain, Apical operates numerous refineries, oleochemical plants, renewable fuel plants and kernel crushing plants. Through joint ventures, Apical also has processing and distribution operations in Brazil, India, Pakistan, Philippines, UAE, USA and Vietnam.">
                         </div>
                         <div class="img-box col-lg-1 col-md-4 p-4" id="ttar" onmouseover="displayDetails('ttar')">
                             <img class="img-fluid" src="img/Client Logo/Pumping System/tunggal teknik alam raya.jpg" id="img" alt="">
-                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
+                            <input type="hidden" id="desc" value="PT Tunggal Teknik Alam Raya is likely a company associated with Xylem, a global water technology company. The company provides solutions for water and wastewater management, including water pumps, treatment systems, and related equipment.">
                         </div>
                         
                     </div>
                 </div>
             </div>
             <div class="client-logo-wrapper p-5" id="transportation">
-                <div class="card shadow border-none">
+                <div class="card shadow ">
                     <div class="card-body row d-flex align-items-center">
                         <div class="title client-category">Transportation</div>
                         <div class="img-box col-lg-2 col-md-6 p-5" id="ap" onmouseover="displayDetails('ap')">
                             <img class="img-fluid" src="img/Client Logo/Transportation/angkasa_pura.png" id="img" alt="">
-                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
-                        
+                            <input type="hidden" id="desc" value="PT. Angkasa Pura I is a state-owned airport management company responsible for managing and operating several airports in eastern Indonesia, including Ngurah Rai International Airport in Bali. 
+                            The company contributes to the development of Indonesia's tourism industry by providing efficient airport services.">
                         </div>
                         <div class="img-box col-lg-1 col-md-4 p-4" id="apii" onmouseover="displayDetails('apii')">
-                            <img class="img-fluid" src="img/Client Logo/Transportation/angkasa_pura_2.png" id="img" alt="">
-                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
-                        
+                            <img class="img-fluid" src="img/Client Logo/Transportation/Angkasa_Pura_II.png" id="img" alt="">
+                            <input type="hidden" id="desc" value="PT. Angkasa Pura II is a state-owned airport management company responsible for managing and operating several airports in western Indonesia, including Soekarno-Hatta International Airport in Jakarta. 
+                            The company plays a crucial role in the country's aviation sector, ensuring smooth operations and services for air travelers.">
                         </div>
                         <div class="img-box col-lg-1 col-md-4 p-4" id="pii" onmouseover="displayDetails('pii')">
-                            <img class="img-fluid" src="img/Client Logo/Transportation/pt_pelindo_ii.png" id="img" alt="">
-                            <input type="hidden" id="desc" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas optio totam voluptate debitis nam, excepturi sit praesentium rem fuga earum velit accusantium hic, corporis incidunt eius porro magnam aut eveniet.">
-                        
+                            <img class="img-fluid" src="img/Client Logo/Transportation/pelindo II.png" id="img" alt="">
+                            <input type="hidden" id="desc" value="PT. Pelindo II, also known as Pelabuhan Indonesia II (Persero), is a state-owned port management company. It operates and manages numerous ports in Indonesia, with Tanjung Priok being one of the busiest and most significant ports in the country. The company plays a crucial role in facilitating maritime trade and logistics activities.">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="client-logo-wrapper p-5" id="automotive">
-                <div class="card shadow border-none">
+                <div class="card shadow ">
                     <div class="card-body row d-flex align-items-center">
                         <div class="title client-category">Automotive</div>
-                        <div class="img-box col-lg-1 col-md-4 p-4">
-                            <img class="img-fluid" src="img/Client Logo/Automotive/akebono.png" alt="">
+                        <div class="img-box col-lg-1 col-md-4 p-4" id="akb" onmouseover="displayDetails('akb')">
+                            <img class="img-fluid" src="img/Client Logo/Automotive/akebono.png" id="img" alt="">
+                            <input type="hidden" id="desc" value="PT. Akebono Brake Astra Indonesia is a joint venture between Akebono Brake Industry Co., Ltd. from Japan and Astra International, a prominent Indonesian conglomerate. 
+                            The company is engaged in the manufacturing and distribution of automotive brake systems and related components. It plays a crucial role in the automotive industry, providing high-quality braking solutions to vehicles produced and sold in Indonesia.">
+                        
                         </div>
-                        <div class="img-box col-lg-1 col-md-4 p-4">
-                            <img class="img-fluid" src="img/Client Logo/Automotive/astra.png" alt="">
+                        <div class="img-box col-lg-1 col-md-4 p-4" id="astra" onmouseover="displayDetails('astra')">
+                            <img class="img-fluid" src="img/Client Logo/Automotive/astra.png" id="img" alt=""> 
+                            <input type="hidden" id="desc" value="PT. Astra Honda Motor is a joint venture between Astra International and Honda Motor Co., Ltd. from Japan. The company is a major player in the motorcycle industry in Indonesia. 
+                            It is involved in the manufacturing, assembly, and distribution of Honda motorcycles and scooters for the Indonesian market. Astra Honda Motor has significantly contributed to the growth of the two-wheeler market in the country and has a wide range of products catering to different customer segments.">
+                        
                         </div>
-                        <div class="img-box col-lg-1 col-md-6 p-5">
-                            <img class="img-fluid" src="img/Client Logo/Automotive/logo igp.jpeg" alt="">
+                        <div class="img-box col-lg-1 col-md-6 p-5" id="igp" onmouseover="displayDetails('igp')">
+                            <img class="img-fluid" src="img/Client Logo/Automotive/pt_igp.png" id="img" alt="">
+                            <input type="hidden" id="desc" value="PT. Inti Ganda Persada is an Indonesian company with a focus on the provision of security and protection services. The company likely offers services such as security personnel, security consulting, and security technology solutions to various clients, including businesses, institutions, and individuals. 
+                            Its expertise lies in ensuring safety and minimizing risks through comprehensive security solutions.">
+                        
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="client-logo-wrapper p-5" id="aerospace">
-            <div class="card shadow border-none">
+            <div class="card shadow ">
                 <div class="card-body row d-flex align-items-center">
                     <div class="title client-category">Aerospace</div>
-                    <div class="img-box col-lg-1 col-md-4 p-4">
-                        <img class="img-fluid" src="img/Client Logo/Aerospace/collins.jpg" alt="">
+                    <div class="img-box col-lg-1 col-md-4 p-4" id="col" onmouseover="displayDetails('col')">
+                        <img class="img-fluid" src="img/Client Logo/Aerospace/collins.jpg" id="img" alt="">
+                        <input type="hidden" id="desc" value="UTC Collins Aerospace is likely a branch or division of Collins Aerospace, which was formerly a subsidiary of United Technologies Corporation (UTC). Collins Aerospace is a leading global aerospace and defense company, involved in the design, manufacturing, and support of technologically advanced aviation and defense systems. 
+                        Their products range from aircraft avionics and power systems to cabin interiors and mission systems, 
+                        catering to both commercial and military customers.">
+                        
                     </div>
-                    <div class="img-box col-lg-1 col-md-4 p-4">
-                        <img class="img-fluid" src="img/Client Logo/Aerospace/pindad.png" alt="">
+                    <div class="img-box col-lg-1 col-md-4 p-4" id="pnd" onmouseover="displayDetails('pnd')">
+                        <img class="img-fluid" src="img/Client Logo/Aerospace/pindad.png" id="img" alt="">
+                        <input type="hidden" id="desc" value="PT. Pindad (Persero) is an Indonesian state-owned company that primarily operates in the defense industry. It specializes in the design, development, and manufacturing of various military and security-related products, including firearms, ammunition, armored vehicles, and other defense equipment. 
+                        PT. Pindad plays a crucial role in supporting Indonesia's defense capabilities and national security.">
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="client-logo-wrapper p-5" id="mining_cement">
-        <div class="card shadow border-none">
+        <div class="card shadow ">
             <div class="card-body row d-flex align-items-center">
                 <div class="title client-category">Mining & Cement</div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/antam.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="ant" onmouseover="displayDetails('ant')">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/antam.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="PT. Aneka Tambang Tbk, abbreviated as Antam, is an Indonesian state-owned mining and metals company. It is involved in various mining activities, including the exploration, extraction, processing, and marketing of gold, nickel, bauxite, silver, and other minerals. 
+                    Additionally, the company is engaged in the refining and trading of precious metals and other products.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/bukit asam.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="ba" onmouseover="displayDetails('ba')">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/bukit asam.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="PT. Bukit Asam (Persero) Tbk, commonly known as Bukit Asam, is an Indonesian state-owned coal mining company. It is one of the country's largest coal producers, involved in mining, processing, and marketing coal and related products. 
+                    Bukit Asam plays a significant role in Indonesia's energy sector, contributing to the supply of coal for domestic consumption and export.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/Clariant_Logo.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="clar" onmouseover="displayDetails('clar')">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/Clariant_Logo.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="PT. Clariant Adsorbent Indonesia is likely a subsidiary or branch of Clariant, a Swiss multinational specialty chemicals company. As the name suggests, this particular division or entity may focus on adsorbents, which are materials used to remove impurities from gases or liquids through the process of adsorption.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/holcim.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="hol" onmouseover="displayDetails('hol')">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/holcim.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="PT. Holcim Indonesia Tbk is a cement manufacturer and provider of building materials in Indonesia. It is part of the LafargeHolcim Group, one of the world's leading cement and aggregates companies. 
+                    The company produces and distributes various types of cement and concrete products, contributing significantly to the construction and infrastructure development in Indonesia.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/indocement.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="idc" onmouseover="displayDetails('idc')">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/indocement.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="PT. Indocement Tunggal Prakarsa Tbk is one of the largest cement producers in Indonesia. 
+                    The company is involved in the production and distribution of cement and related building materials. Indocement operates several cement plants across the country and caters to the construction industry's demand for quality cement products.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/kbk.jpeg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="kbk" onmouseover="displayDetails('kbk')">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/kbk.jpeg" id="img" alt="">
+                    <input type="hidden" id="desc" value="PT. Kasongan Bumi Kencana is  a mining company operating in Indonesia.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/sinar tambang arthalestari.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="sta" onmouseover="displayDetails('sta')">
+                    <img class="img-fluid" src="img/Client Logo/Mining & Cement/sinar tambang arthalestari.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="PT Sinar Tambang Arthalestari Semen  is here to answer what consumers have been looking for, namely cement with premium quality that is easy to use for various applications. Produced in a modern, high-tech factory under the supervision of experts who are experienced in their fields, Semen Bima is guaranteed to meet the cement standards required by Indonesia today. cement but cement whose quality is truly proven to support strong and durable construction.">
+                        
                 </div>
             </div>
         </div>
     </div>
 </div>
     <div class="client-logo-wrapper p-5" id="food">
-        <div class="card shadow border-none">
+        <div class="card shadow ">
             <div class="card-body row d-flex align-items-center">
                 <div class="title client-category">Food</div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Pharmaceutical/freyabadi indotama.jpeg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="fa" onmouseover="displayDetails('fa')">
+                    <img class="img-fluid" src="img/Client Logo/Pharmaceutical/freyabadi indotama.jpeg" id="img" alt="">
+                    <input type="hidden" id="desc" value="PT. Freyabadi Indotama is not well-known, and specific details about the company's activities are not available from the given information.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Pharmaceutical/sanbe farma.jpg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="sf" onmouseover="displayDetails('sf')">
+                    <img class="img-fluid" src="img/Client Logo/Pharmaceutical/sanbe farma.jpg" id="img" alt="">
+                    <input type="hidden" id="desc" value="PT. Sanbe Farma is a leading Indonesian pharmaceutical company engaged in the research, development, manufacturing, and distribution of various pharmaceutical products. 
+                    The company produces a wide range of medicines and healthcare products, contributing to the healthcare industry in Indonesia and beyond.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Pharmaceutical/sydna farma.jpeg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="syf" onmouseover="displayDetails('syf')">
+                    <img class="img-fluid" src="img/Client Logo/Pharmaceutical/sydna farma.jpeg" id="img" alt="">
+                    <input type="hidden" id="desc" value="Sydna Farma is a pharmaceutical company established in January 2007 after took over the factory facility, factory management and factory employees of PT Organon Indonesia in December 2006. Sydna Farma currently manufactures its own medicinal products specialized in hormonal and contraception solid dosage form. 
+                    Sydna Farma is also contract manufacturer of many pharmaceutical industries,big local companies as well as Multi-National Companies.">
+                        
                 </div>
             </div>
         </div>
     </div>
 </div>
     <div class="client-logo-wrapper p-5" id="education">
-        <div class="card shadow border-none">
+        <div class="card shadow ">
             <div class="card-body row d-flex align-items-center">
                 <div class="title client-category">Education</div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/ATKP Medan.jpg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="atkp" onmouseover="displayDetails('atkp')">
+                    <img class="img-fluid" src="img/Client Logo/Education/ATKP Medan.jpg" id="img" alt="">
+                    <input type="hidden" id="desc" value="Akademi Teknik dan Keselamatan Penerbangan (ATKP) Medan is an aviation technical and safety academy located in Medan, North Sumatra, Indonesia. It likely offers education and training programs related to aviation engineering and safety to prepare students for careers in the aviation industry.">
+                        
+                </div>  
+                <div class="img-box col-lg-1 col-md-4 p-4" id="aj" onmouseover="displayDetails('aj')">
+                    <img class="img-fluid" src="img/Client Logo/Education/atma jaya.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="Universitas Atmajaya is a private Catholic university with campuses in Jakarta and Yogyakarta, Indonesia. The university provides education in various fields and upholds the values of faith, service, and academic excellence.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/atma jaya.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="bbplk" onmouseover="displayDetails('bbplk')">
+                    <img class="img-fluid" src="img/Client Logo/Education/bbplk serang.jpg" id="img" alt="">
+                    <input type="hidden" id="desc" value="Balai Besar Pengembangan Latihan Kerja (BBPLK) Serang is a government training center located in Serang, Banten, Indonesia. The center likely offers various vocational training programs to enhance the skills and employability of the local workforce.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/bbplk serang.jpg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="itenas" onmouseover="displayDetails('itenas')">
+                    <img class="img-fluid" src="img/Client Logo/Education/ITENAS.jpg" id="img" alt="">
+                    <input type="hidden" id="desc" value="Institut Teknologi Nasional Bandung is likely a technical institute located in Bandung, West Java, Indonesia. It may offer engineering and technical education to students, focusing on practical and industry-relevant skills.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/ITENAS.jpg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="p4tkb" onmouseover="displayDetails('p4tkb')">
+                    <img class="img-fluid" src="img/Client Logo/Education/p4tk bandung.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="P4TK Bandung is likely a training and development center (Pusat Pengembangan dan Pemberdayaan Pendidik dan Tenaga Kependidikan) located in Bandung, West Java, Indonesia. It may be responsible for providing training programs and professional development opportunities for educators and education personnel.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/p4tk bandung.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="p4tkm" onmouseover="displayDetails('p4tkm')">
+                    <img class="img-fluid" src="img/Client Logo/Education/p4tk medan.jpeg" id="img" alt="">
+                    <input type="hidden" id="desc" value="P4TK Medan is likely a training and development center located in Medan, North Sumatra, Indonesia. Similar to other P4TK centers, it may focus on providing training and professional development for educators and education personnel.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/p4tk medan.jpeg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="pnj" onmouseover="displayDetails('pnj')">
+                    <img class="img-fluid" src="img/Client Logo/Education/pnj.jpg" id="img" alt="">
+                    <input type="hidden" id="desc" value="Politeknik Negeri Jakarta , is a leading state polytechnic institution located in Jakarta, Indonesia. Established in 1973, PNJ is one of the oldest and most reputable polytechnics in the country.
+
+                    The institution offers a wide range of vocational and applied science programs in various fields, including engineering, technology, business, creative industries, and health sciences. PNJ focuses on providing hands-on, practical education to equip students with relevant skills and knowledge for the job market.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/pnj.jpg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="plbn" onmouseover="displayDetails('plbn')">
+                    <img class="img-fluid" src="img/Client Logo/Education/poliban.jpeg" id="img" alt="">
+                    <input type="hidden" id="desc" value="Politeknik Negeri Banjarmasin is a state polytechnic institution located in Banjarmasin, South Kalimantan, Indonesia. It provides higher education and vocational training in various fields, preparing students for careers in industries and sectors relevant to the region's economic development.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/poliban.jpeg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="plns" onmouseover="displayDetails('plns')">
+                    <img class="img-fluid" src="img/Client Logo/Education/polines.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="Politeknik Negeri Semarang is a state polytechnic institution located in Semarang, Central Java, Indonesia. It offers practical and skills-based education, preparing students for careers in specific technical fields.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/polines.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="pltkaceh" onmouseover="displayDetails('pltkaceh')">
+                    <img class="img-fluid" src="img/Client Logo/Education/politeknik aceh.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="Politeknik Aceh is a polytechnic institution situated in Aceh, Indonesia. As with other polytechnics, it provides vocational and technical education, preparing students for careers in specific trades or industries.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/politeknik aceh.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="pltkriau" onmouseover="displayDetails('pltkriau')">
+                    <img class="img-fluid" src="img/Client Logo/Education/politeknik caltex riau.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="Politeknik Caltex Riau, also known as PCR, is a polytechnic institution located in Riau, Indonesia. It offers practical and skills-oriented education to students, preparing them for various industries and sectors in the region.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/politeknik caltex riau.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="pltkswjy" onmouseover="displayDetails('pltkswjy')">
+                    <img class="img-fluid" src="img/Client Logo/Education/politeknik sriwijaya.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="Politeknik Negeri Sriwijaya is a state polytechnic institution located in Palembang, South Sumatra, Indonesia. It provides technical and vocational education, contributing to the region's human resource development and industries.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/politeknik sriwijaya.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="pltkup" onmouseover="displayDetails('pltkup')">
+                    <img class="img-fluid" src="img/Client Logo/Education/politeknik ujung pandang.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="Politeknik Negeri Ujung Pandang, also known as Polytechnic of Makassar State, is a state polytechnic institution located in Makassar, South Sulawesi, Indonesia. It offers practical and technical education to students in various disciplines, contributing to the region's human resource development.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/politeknik ujung pandang.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="polnes" onmouseover="displayDetails('polnes')">
+                    <img class="img-fluid" src="img/Client Logo/Education/polnes.jpeg" id="img" alt="">
+                    <input type="hidden" id="desc" value="Politeknik Negeri Samarinda is a state polytechnic institution situated in Samarinda, East Kalimantan, Indonesia. It focuses on providing technical and vocational education to students, equipping them with the skills needed for various industries and sectors in the region.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/polnes.jpeg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="pltkjogja" onmouseover="displayDetails('pltkjogja')">
+                    <img class="img-fluid" src="img/Client Logo/Education/poltek lpp yogyakarta.jpeg" id="img" alt="">
+                    <input type="hidden" id="desc" value="Politeknik LPP Yogyakarta is likely a polytechnic institution affiliated with Lembaga Pendidikan dan Pelatihan Yogyakarta (LPP Yogyakarta). It offers technical and vocational education to students, aiming to produce skilled graduates for industries and businesses in the Yogyakarta region.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/poltek lpp yogyakarta.jpeg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="sd" onmouseover="displayDetails('sd')">
+                    <img class="img-fluid" src="img/Client Logo/Education/sanata dharma.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="Universitas Sanata Dharma is a private Catholic university located in Yogyakarta, Indonesia. It offers a variety of academic programs and aims to integrate faith and academic knowledge to nurture well-rounded individuals.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/sanata dharma.png" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="smkn1" onmouseover="displayDetails('smkn1')">
+                    <img class="img-fluid" src="img/Client Logo/Education/SMKN 1 Cimahi.png" id="img" alt="">
+                    <input type="hidden" id="desc" value="SMKN1 Cimahi likely refers to a vocational high school (Sekolah Menengah Kejuruan) located in Cimahi, West Java, Indonesia. Vocational high schools in Indonesia provide practical and skills-oriented education, preparing students for careers in specific trades or industries.">
+                        
                 </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/SMKN 1 Cimahi.png" alt="">
-                </div>
-                <div class="img-box col-lg-1 col-md-4 p-4">
-                    <img class="img-fluid" src="img/Client Logo/Education/UGM.jpeg" alt="">
+                <div class="img-box col-lg-1 col-md-4 p-4" id="ugm" onmouseover="displayDetails('ugm')">
+                    <img class="img-fluid" src="img/Client Logo/Education/UGM.jpeg" id="img" alt="">
+                    <input type="hidden" id="desc" value="Universitas Gajah Mada (UGM) is one of the oldest and most prestigious universities in Indonesia. Located in Yogyakarta, it offers a wide range of undergraduate and postgraduate programs across various disciplines, contributing significantly to Indonesia's higher education landscape.">
+                        
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="client-logo-wrapper p-5" id="oil_gas">
-    <div class="card shadow border-none">
+    <div class="card shadow ">
         <div class="card-body row d-flex align-items-center">
             <div class="title client-category">Oil & Gas</div>
-            <div class="img-box col-lg-1 col-md-4 p-4">
-                <img class="img-fluid" src="img/Client Logo/Energy/Chevron.png" alt="">
+            <div class="img-box col-lg-1 col-md-4 p-4" id="cvrn" onmouseover="displayDetails('cvrn')">
+                <img class="img-fluid" src="img/Client Logo/Energy/Chevron.png" id="img" alt="">
+                <input type="hidden" id="desc" value="PT. Chevron Pacific Indonesia is a subsidiary of Chevron Corporation, one of the world's largest integrated energy companies. The company operates in the upstream sector of the oil and gas industry in Indonesia, involved in exploration, production, and development of oil and natural gas resources.">
+                        
             </div>
-            <div class="img-box col-lg-1 col-md-4 p-4">
-                <img class="img-fluid" src="img/Client Logo/Energy/EMP-Bentu-Ltd.jpg" alt="">
+            <div class="img-box col-lg-1 col-md-4 p-4" id="emp" onmouseover="displayDetails('emp')">
+                <img class="img-fluid" src="img/Client Logo/Energy/EMP-Bentu-Ltd.jpg" id="img" alt="">
+                <input type="hidden" id="desc" value="EMP's has operations spanning the Indonesian archipelago from the northern part of Sumatra, to East Kalimantan, Java and Eastern Indonesia. 
+                EMP's also expanded its operation Internationally, located in Mozambique, Africa.">
+                        
             </div>
-            <div class="img-box col-lg-1 col-md-4 p-4">
-                <img class="img-fluid" src="img/Client Logo/Energy/pertamina_ep.png" alt="">
+            <div class="img-box col-lg-1 col-md-4 p-4" id="ptmn" onmouseover="displayDetails('ptmn')">
+                <img class="img-fluid" src="img/Client Logo/Energy/pertamina_ep.png" id="img" alt="">
+                <input type="hidden" id="desc" value="PT. Pertamina EP is a subsidiary of Pertamina, Indonesia's state-owned oil and gas company. The company focuses on the exploration and production of oil and natural gas resources in Indonesia.">
+                        
             </div>
-            <div class="img-box col-lg-1 col-md-4 p-4">
-                <img class="img-fluid" src="img/Client Logo/Energy/petroflexx.jpg" alt="">
+            <div class="img-box col-lg-1 col-md-4 p-4" id="pfx" onmouseover="displayDetails('pfx')">
+                <img class="img-fluid" src="img/Client Logo/Energy/petroflexx.jpg" id="img" alt="">
+                <input type="hidden" id="desc" value="PETROFLEXX PRIMA DAYA is a leading energy service company in the region focusing on providing integrated solutions to regional E&P corporations.
+                Founded in 2001 (then PT. Jaya Wijaya Raya), PETROFLEXX PRIMA DAYA now employs more than 300 professionals, supplying end-to-end services designed to maximize our clients investment and business benefits.">
+                        
             </div>
-            <div class="img-box col-lg-1 col-md-4 p-4">
-                <img class="img-fluid" src="img/Client Logo/Energy/petrokimia gresik.png" alt="">
+            <div class="img-box col-lg-1 col-md-4 p-4" id="pkg" onmouseover="displayDetails('pkg')">
+                <img class="img-fluid" src="img/Client Logo/Energy/petrokimia gresik.png" id="img" alt="">
+                <input type="hidden" id="desc" value="PT. Petrokima Gresik is likely involved in the petrochemical industry in Indonesia.">
+                        
             </div>
-            <div class="img-box col-lg-1 col-md-4 p-4">
-                <img class="img-fluid" src="img/Client Logo/Energy/PremierOil.jpg" alt="">
+            <div class="img-box col-lg-1 col-md-4 p-4" id="po" onmouseover="displayDetails('po')">
+                <img class="img-fluid" src="img/Client Logo/Energy/PremierOil.jpg" id="img" alt="">
+                <input type="hidden" id="desc" value="PT. Premier Oil is likely a subsidiary or branch of Premier Oil, an independent oil and gas exploration and production company with operations in various countries.">
+                        
             </div>
-            <div class="img-box col-lg-1 col-md-4 p-4">
-                <img class="img-fluid" src="img/Client Logo/Energy/pupuk kaltim.png" alt="">
+            <div class="img-box col-lg-1 col-md-4 p-4" id="pkaltim" onmouseover="displayDetails('pkaltim')">
+                <img class="img-fluid" src="img/Client Logo/Energy/pupuk kaltim.png" id="img" alt="">
+                <input type="hidden" id="desc" value="PT. Pupuk Kalimantan Timur is likely a subsidiary of Pupuk Indonesia, an Indonesian state-owned fertilizer company.
+                It is involved in the production and distribution of fertilizers, supporting Indonesia's agricultural sector.">
+                        
             </div>
-            <div class="img-box col-lg-1 col-md-4 p-4">
-                <img class="img-fluid" src="img/Client Logo/Energy/pupuk sriwijaya.png" alt="">
+            <div class="img-box col-lg-1 col-md-4 p-4" id="pswjy" onmouseover="displayDetails('pswjy')">
+                <img class="img-fluid" src="img/Client Logo/Energy/pupuk sriwijaya.png" id="img" alt="">
+                <input type="hidden" id="desc" value="PT. Pupuk Sriwijaya is likely a subsidiary of Pupuk Indonesia, focused on the production and distribution of fertilizers to support agriculture in the Sriwijaya region of Indonesia.">
+                        
             </div>
-            <div class="img-box col-lg-1 col-md-4 p-4">
-                <img class="img-fluid" src="img/Client Logo/Energy/s2p.jpeg" alt="">
+            <div class="img-box col-lg-1 col-md-4 p-4" id="s2p" onmouseover="displayDetails('s2p')">
+                <img class="img-fluid" src="img/Client Logo/Energy/s2p.jpeg" id="img" alt="">
+                <input type="hidden" id="desc" value="PT Sumber Segara Primadaya conscientiously conducts a CSR program that focuses on improving the quality of life, community, education, economy, technology, social and public facilities.">
+                        
             </div>
-            <div class="img-box col-lg-1 col-md-4 p-4">
-                <img class="img-fluid" src="img/Client Logo/Energy/total.png" alt="">
+            <div class="img-box col-lg-1 col-md-4 p-4" id="total" onmouseover="displayDetails('total')">
+                <img class="img-fluid" src="img/Client Logo/Energy/total_logo.png" id="img" alt="">
+                <input type="hidden" id="desc" value="PT. Total E&P is likely a subsidiary of TotalEnergies, a major French multinational energy company. 
+                The company may be involved in the exploration and production of oil and gas resources in Indonesia.">
+                        
             </div>
         </div>
     </div>
 </div>
 <div class="">
     <div class="client-detail-wrapper p-5" id="client-details" style="display: none;">
-        <div class="card shadow border-none">
+        <div class="card shadow ">
             <div class="card-body row d-flex align-items-center">
                 <div class="col-lg-6 col-sm-12" id="desc-display">
                     Desc
@@ -371,7 +472,7 @@
         </div>
     </div>    
 </div>
-        <div class="row">
+        <div class="row" id="contact">
             <div class="col-lg-6 col-sm-12 p-5">
                 <div class="section-title">
                     <div class="title-border">
@@ -405,10 +506,10 @@
                         <div class="line"></div>
                     </div>
                     <div class="card-body">
-                       <div class="text-center text-dark">
+                    <div class="text-center text-dark">
                         Fax. (022) 200 6927 <br>
                         Telp. (022) 2027 9212 / 0812 238 4086
-                       </div>
+                    </div>
                     </div>
                 </div>
             </div>
